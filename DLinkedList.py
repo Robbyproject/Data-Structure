@@ -26,23 +26,19 @@ def printForward(head):
     current = head
     while current != None:
         print(current.data, end=" ")
-        if current.prev != None and current.next != None:
+        if current.next != None:
             print("<->", end=" ")
-        else:
-            print("->", end=" ")
         current = current.next
-    print("None")
+    print()
 
 def printBackward(tail):
     current = tail
     while current != None:
         print(current.data, end=" ")
-        if current.prev != None and current.next != None:
+        if current.prev != None:
             print("<->", end=" ")
-        else:
-            print("->", end=" ")
         current = current.prev
-    print("None")
+    print()
 
 def insertAtHead(Dlinked_list, data):
     new_node = DNode(data)
