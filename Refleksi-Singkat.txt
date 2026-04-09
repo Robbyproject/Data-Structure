@@ -1,0 +1,5 @@
+1.Kelebihan Doubly Linked List Dapat melakukan traversal (penelusuran) dua arah, baik maju maupun mundur,        serta lebih mudah saat menghapus node tertentu karena memiliki referensi langsung ke node sebelumnya(previous pointer).
+
+2.Kesesuaian Circular Linked List untuk Giliran Pemain Karena node terakhir terhubung kembali ke node pertama, sistem dapat melakukan pengulangan urutan secara otomatis tanpa harus mengatur ulang pointer secara manual ke awal, sangat ideal untuk siklus yang terus berputar.
+
+3.Kondisi Berhenti Traversal pada Circular Linked List Berbeda karena tidak ada node yang bernilai NULL sebagai penanda akhir.Jika menggunakan kondisi standar, program akan terjebak dalam infinite loop. Kondisi berhentinya harus membandingkan apakah pointer saat ini sudah kembali ke node awal (head).
