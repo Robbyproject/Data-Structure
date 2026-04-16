@@ -5,7 +5,7 @@ class BStack:
         print(self.string)
     def checkBalancedParenthesis(self):
         if self.string is not None:
-            tempStack = Stack()
+            tempStack = BStack()
             for char in self.value:
                 if char == "(":
                     tempStack.push(char)
