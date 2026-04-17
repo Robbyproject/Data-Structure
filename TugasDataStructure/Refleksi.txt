@@ -1,0 +1,8 @@
+Mengapa Document menggunakan Stack?
+Karena pada kode Document, proses mencetak halaman menggunakan metode pop(). Ini menciptakan alur LIFO (Last In, First Out), di mana halaman terakhir yang dimasukkan (misalnya "Page 3") berada di tumpukan teratas dan akan ditarik keluar pertama kali untuk dicetak.
+
+Mengapa PrintQueue menggunakan Queue?
+Karena antrean dokumen menuntut prinsip keadilan (siapa cepat, dia dapat). Pada kode, printDocument() menggunakan metode dequeue() yang menarik data dari indeks paling depan (indeks 0). Ini adalah alur FIFO (First In, First Out), memastikan dokumen yang masuk pertama kali (misalnya Document A) diproses lebih dulu.
+
+Apa perbedaan LIFO dan FIFO dalam sistem ini?
+Perbedaannya terlihat dari hasil akhir urutan data. FIFO (Queue) mempertahankan urutan awal dokumen (Document A diproses sebelum Document B). Sebaliknya, LIFO (Stack) membalikkan urutan halaman di dalam dokumen tersebut (Halaman dicetak dari urutan 3, lalu 2, lalu 1).
