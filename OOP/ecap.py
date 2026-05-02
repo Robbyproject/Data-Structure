@@ -13,7 +13,7 @@ class PREmployee:
     def __init__(self,name,salary):
         self.name = name
         self.__salary = salary
-        self.__accountNumber = accountNumber
+        self.__accountNumber = "1234567890"
 
     def show_salary(self):
         return self.__salary
